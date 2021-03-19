@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+youtube-transcript-api = "*"
+transformers = {extras = ["torch"], version = "*"}
+sentencepiece = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

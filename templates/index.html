@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="stylesheet" href="static/styles.css" /> -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      header {
+        padding: 30px;
+        text-align: center;
+        color: white;
+      }
+      h1 {
+        background-color: rgb(241, 22, 22);
+        text-align: center;
+        border-radius: 1rem;
+      }
+      p {
+        background-color: rgb(247, 8, 8);
+        color: aliceblue;
+        align-content: center;
+        border-radius: 1rem;
+      }
+      footer {
+        padding: 10px;
+        text-align: center;
+        color: white;
+
+      }
+      @media (max-width: 600px) {
+        nav, article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <h1 class="display-3">Youtube Video Transcript Summarizer :</h1>
+      </div>
+    </header>
+    <hr />
+    <section>
+      <div class="container">
+        <form class="row" method="POST" action="/summarize">
+          <div class="col">
+            <label for="inputPassword2" class="visually-hidden">Password</label>
+            <input
+              type="text"
+              name="youtube_url"
+              class="form-control"
+              id="inputPassword2"
+              placeholder="Enter Youtube Video URL"
+            />
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">
+              Summarize
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <hr />
+    <footer>
+      <p>Made By Subham Chakraborty &copy; 2021</p>
+    </footer>
+  </body>
+</html>
